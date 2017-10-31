@@ -1,11 +1,14 @@
 <template>
   <div id="app">
-    
+    <Header />
+    <Form />
   </div>
 </template>
 
 
 <script>
+import Header from './components/Header.vue'
+import Form from './components/Form.vue'
 export default {
   name: 'app2',
   data () {
@@ -15,12 +18,12 @@ export default {
 
     }
   },
-
-  methods: {
-    reverseMessage: function () {
-      this.message = this.message.split('').reverse().join('')
-    }
+  components: {
+    Header,
+    Form
   }
+
+  
   
 
 }
