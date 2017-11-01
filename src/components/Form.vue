@@ -1,20 +1,24 @@
 <template>
   <div class="form">
       <div class="prices-wrapper">
-       <PriceRow label="Headphones White H8" amount="109.02"/>
+       <PriceRow label="Fruit Cake" amount="59.99"/>
        <PriceRow label="Tax" amount="8"/>
-       <PriceRow label="TOTAL" amount="210.70" bold="true" />
+       <PriceRow label="TOTAL" amount="67.99" bold="true" />
 
       </div>
       <div class="form-wrapper">
             <div class="form-row">
-                <FormInput :error="cardError" placeholder="Card Number" type="number" v-on:changeData="changeCard" />      
+                <FormInput :error="cardError" maxlength="19"  placeholder="Card Number"  v-on:changeData="changeCard" />      
             </div>
            <div class="form-row">
                 <FormInput :error="expError" maxlength="5" placeholder="MM/YY" inline="true" class="exp" v-on:changeData="changeExp" />
-                <FormInput  placeholder="CVC" inline="true" class="cvc" type="number" v-on:changeData="changeCVC" />
+                <FormInput :error="cvcError"  placeholder="CVC" inline="true" class="cvc" type="number" v-on:changeData="changeCVC" />
             </div>
-            {{ msg }}
+              <div>
+                  <ErrorMsg  :msg="msg" />  
+              </div>
+                
+            
             <div class="form-row">
                 <input class="submit-btn input" type="submit" value="checkout" v-on:click="submit" />
             </div>
@@ -26,12 +30,14 @@
 
 import PriceRow from './PriceRow.vue'
 import FormInput from './FormInput.vue'
+import ErrorMsg from './ErrorMsg.vue'
 
 export default {
-  props: ['msg', 'cardError', 'expError'],
+  props: ['msg', 'cardError', 'expError', 'cvcError'],
   components: {
     PriceRow,
-    FormInput
+    FormInput,
+    ErrorMsg
   },
   methods:{
       changeCard: function(value) {

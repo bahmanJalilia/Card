@@ -12,11 +12,20 @@ export default {
           internalData: '',
       }
   },
+
   watch: {
+      
       'internalData': function(value, previous) {
         if(previous.length !== 3 && this.internalData.length === 2 && this.placeholder === "MM/YY") {
         this.internalData = this.internalData + '/'
-      }
+      } else if (this.placeholder === "Card Number" &&  this.internalData.length === 4 && previous.length !== 5){
+          this.internalData += '-'  
+      } else if( this.internalData.length === 9 && this.placeholder === "Card Number" && previous.length !== 10){
+          this.internalData += '-'
+      } else if(this.internalData.length === 14 && this.placeholder === "Card Number" && previous.length !== 15){
+          this.internalData += '-'
+      } 
+
           this.$emit('changeData', this.internalData)
       }
   },
@@ -39,8 +48,6 @@ export default {
 .inline-input {
     width: 48%;
 }
-.exp {
-    margin-right: 2%;
-}
+
 
 </style>

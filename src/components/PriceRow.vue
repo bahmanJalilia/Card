@@ -19,6 +19,7 @@ export default {
         float: none;
         clear: both;
         padding: 15px 0;
+        font-family: "Courier New", Courier, monospace;
     }
     .price-label {
         float: left;

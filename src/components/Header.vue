@@ -6,11 +6,13 @@
 
 <style>
 .header {
-    background-image: url(/dist/drill.jpeg?d5b7cbc…);
+    background-image: url('../assets/cake.jpg');
     width: 100%;
-    height: 200px;
+    height: 400px;
     background-repeat: no-repeat;
     background-position: center;
-    background-size: contain;
+    background-size: cover;
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
 }
 </style>
