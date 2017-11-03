@@ -16,13 +16,15 @@
 
 
 <script>
+
 import Header from './components/Header.vue'
 import Form from './components/Form.vue'
+
 export default {
   name: 'app2',
   data () {
     return {
-      msg: '',
+      msg: 'sdf',
       card: '',
       cardError: false,
       exp: '',

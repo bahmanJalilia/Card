@@ -15,6 +15,24 @@ export default {
 </script>
 
 <style>
+
+.price-row {
+        float: none;
+        clear: both;
+        padding: 15px 0;
+        font-family: "Courier New", Courier, monospace;
+    }
+    .price-label {
+        float: left;
+    }
+    .price-amount {
+        float: right;
+    }
+    .price-bold {
+        font-weight: bold;
+    }
+
+@media only screen and (max-width: 959px){
     .price-row {
         float: none;
         clear: both;
@@ -30,4 +48,5 @@ export default {
     .price-bold {
         font-weight: bold;
     }
+}
 </style>
