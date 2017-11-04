@@ -36,4 +36,10 @@ describe("<App />", () => {
     wrapper.find(".submit-btn").trigger("click");
     expect(wrapper.findAll(".error-status")).toHaveLength(3);
   });
+
+  it("should appear error in card", () => {
+    const instance = new Vue(App);
+    instance.submit();
+    expect(instance.cardError).toBe(true);
+  });
 });

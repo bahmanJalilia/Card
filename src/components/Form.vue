@@ -13,7 +13,7 @@
                 <FormInput :error="expError" maxlength="5" placeholder="MM/YY" inline="true" class="exp" v-on:changeData="changeExp" />
                 <FormInput :error="cvcError"  placeholder="CVC" inline="true" class="cvc" type="number" v-on:changeData="changeCVC" />
             </div>
-              <div>
+              <div id="error">
                   <ErrorMsg  :msg="msg" />  
               </div>
             <div class="form-row">

@@ -23,7 +23,7 @@ export default {
   name: "app2",
   data() {
     return {
-      msg: "sdf",
+      msg: "",
       card: "",
       cardError: false,
       exp: "",
