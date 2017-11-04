@@ -50,11 +50,9 @@ export default {
   padding: 0px 20px;
   border-radius: 5px;
 }
-
 .error-status {
   border: 1px solid red;
 }
-
 .inline-input {
   width: 48%;
 }

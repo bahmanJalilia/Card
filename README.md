@@ -1,5 +1,5 @@
 # card
-
+I prefer to create the Form that I take it from the URL:'https://dribbble.com/shots/2295311-Daily-UI-Credit-Card-Checkout' which you sent it.
 > A Vue.js project
 
 ## Build Setup

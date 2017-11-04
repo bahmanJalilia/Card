@@ -28,7 +28,7 @@ export default {
   font-weight: bold;
 }
 
-@media only screen and (max-width: 959px) {
+@media only screen and (max-width: 768px) {
   .price-row {
     float: none;
     clear: both;

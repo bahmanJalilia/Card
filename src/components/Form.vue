@@ -69,7 +69,6 @@ export default {
   width: 100%;
   margin: 15px 0;
 }
-
 .input {
   border-color: #ccc;
   border-radius: 4px;
@@ -80,7 +79,6 @@ export default {
   padding: 5px 17px;
   border: 2px solid rgba(204, 204, 204, 0.3);
 }
-
 .submit-btn {
   background-color: #ff5f00;
   border-radius: 25px;
