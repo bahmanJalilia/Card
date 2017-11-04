@@ -4,7 +4,7 @@
 
  <script>
 export default {
-  props: ["placeholder", "inline", "data", "error"],
+  props: ["placeholder", "inline", "error"],
   data: function() {
     return {
       internalData: ""
