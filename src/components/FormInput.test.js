@@ -20,7 +20,7 @@ describe("<FormInput />", () => {
   });
   it("should return value", () => {
     const wrapper = mount(FormInput);
-    wrapper.vm.$emit("changeData", test);
-    expect(wrapper.emitted().changeData[0]).toEqual([test]);
+    wrapper.vm.$emit("changeData", 123);
+    expect(wrapper.emitted().changeData[0]).toEqual([123]);
   });
 });
